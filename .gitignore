@@ -1,0 +1,6 @@
+.DS_Store
+
+.env
+service-account-key.json
+
+node_modules
