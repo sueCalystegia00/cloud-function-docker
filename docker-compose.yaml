@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  node:
+    container_name: nodejs
+    build:
+      context: ./nodejs
+      dockerfile: Dockerfile
+    volumes:
+      - ./nodejs:/workspace
+      - node_modules_volume:/workspace/node_modules:delegated
+    tty: true
+    ports:
+      - 80:80
+
+volumes:
+  node_modules_volume:
