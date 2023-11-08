@@ -11,7 +11,11 @@ services:
       - node_modules_volume:/workspace/node_modules:delegated
     tty: true
     ports:
-      - 4000:4000
+      - 4001:4001
+      - 5001:5001
+      - 9099:9099
+    networks:
+      - default
 
 volumes:
   node_modules_volume:
