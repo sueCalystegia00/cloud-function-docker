@@ -16,14 +16,38 @@
 		}
 	],
 	"emulators": {
+		"auth": {
+			"host": "0.0.0.0",
+			"port": 9099
+		},
 		"functions": {
-			"port": 5001,
-			"host": "0.0.0.0"
+			"host": "0.0.0.0",
+			"port": 5001
+		},
+		"firestore": {
+			"host": "0.0.0.0",
+			"port": 8080
+		},
+		"database": {
+			"host": "0.0.0.0",
+			"port": 9000
+		},
+		"hosting": {
+			"host": "0.0.0.0",
+			"port": 5050
+		},
+		"pubsub": {
+			"host": "0.0.0.0",
+			"port": 8085
+		},
+		"storage": {
+			"host": "0.0.0.0",
+			"port": 9199
 		},
 		"ui": {
-			"port": 4001,
 			"enabled": true,
-			"host": "0.0.0.0"
+			"host": "0.0.0.0",
+			"port": 4001
 		}
 	}
 }
